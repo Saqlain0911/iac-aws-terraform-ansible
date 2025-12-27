@@ -1,0 +1,17 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+.terraform.lock.hcl
+
+# Ansible
+*.retry
+
+# SSH Keys (NEVER commit these)
+*.pem
+id_rsa_project
+id_rsa_project.pub
+
+# OS
+.DS_Store
