@@ -19,3 +19,11 @@ module "compute" {
   subnet_id         = module.networking.public_subnet_id
   security_group_id = module.networking.web_sg_id
 }
+
+resource "local_file" "ansible_inventory" {
+  content = <<EOT
+[webservers]
+${module.compute.instance_public_ip} ansible_user=ubuntu ansible_ssh_private_key_file=../id_rsa_project
+EOT
+  filename = "../ansible/inventory/hosts.ini"
+}
