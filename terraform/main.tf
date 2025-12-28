@@ -116,7 +116,7 @@ resource "aws_security_group" "web_sg" {
 # Uploads the public key you generated in Phase 1 to AWS
 resource "aws_key_pair" "deployer" {
   key_name   = "${var.project_name}-key"
-  public_key = file("../id_rsa_project.pub") 
+  public_key = file("../id_rsa_project.pub")
 }
 
 # --- EC2 Instance ---
