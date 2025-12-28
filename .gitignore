@@ -8,7 +8,7 @@
 # Ansible
 *.retry
 
-# SSH Keys (NEVER commit these)
+# SSH Keys
 *.pem
 id_rsa_project
 id_rsa_project.pub
