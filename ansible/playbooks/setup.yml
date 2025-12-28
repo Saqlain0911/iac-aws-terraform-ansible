@@ -1,0 +1,43 @@
+---
+- name: Configure Web Server and Docker
+  hosts: webservers
+  become: yes  # This means "sudo"
+  vars:
+    docker_packages:
+      - docker.io
+      - docker-compose
+      - git
+
+  tasks:
+    - name: Update APT package cache
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+
+    - name: Start and Enable Nginx
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: Install Docker and Dependencies
+      apt:
+        name: "{{ docker_packages }}"
+        state: present
+
+    - name: Start and Enable Docker
+      service:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Add 'ubuntu' user to 'docker' group
+      user:
+        name: ubuntu
+        groups: docker
+        append: yes
