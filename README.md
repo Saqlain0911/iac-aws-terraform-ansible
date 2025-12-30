@@ -11,7 +11,7 @@
 
 ## Project Overview
 
-This project demonstrates a **production-style DevOps workflow** by implementing **Infrastructure as Code (IaC) on AWS cloud**. Terraform is used to provision modular cloud infrastructure, while Ansible automates server configuration, enabling a fully automated, repeatable, and end-to-end web server deployment from network provisioning to application-ready configuration.
+This project demonstrates a **production-style DevOps workflow** by implementing **Infrastructure as Code (IaC) on the AWS cloud**. Terraform is used to provision modular cloud infrastructure, while Ansible automates server configuration, enabling a fully automated, repeatable, and end-to-end web server deployment from network provisioning to application-ready configuration.
 
 ## Core Design Principles
 
@@ -25,16 +25,6 @@ This project demonstrates a **production-style DevOps workflow** by implementing
 
 - **Remote state management** with locking for reliability
 
-## Technology Stack
-
-| Category                  | Tools                   |
-|---------------------------|-------------------------|
-| Cloud Provider            | AWS                     |
-| Infrastructure as Code    | Terraform (modular)     |
-| Configuration Management  | Ansible (roles-based)   |
-| Terraform State Management| S3 + DynamoDB           |
-| Operating System          | Ubuntu 22.04 LTS        |
-
 ## Features
 > <small>Industry-standard DevOps practices implemented</small>
 
@@ -46,6 +36,16 @@ This project demonstrates a **production-style DevOps workflow** by implementing
 - Idempotent automation
 - Clear separation of responsibilities
 - Cost-aware resource lifecycle management
+
+## Technology Stack
+
+| Category                  | Tools                   |
+|---------------------------|-------------------------|
+| Cloud Provider            | AWS                     |
+| Infrastructure as Code    | Terraform (modular)     |
+| Configuration Management  | Ansible (roles-based)   |
+| Terraform State Management| S3 + DynamoDB           |
+| Operating System          | Ubuntu 22.04 LTS        |
 
 ## Project Architecture
 
