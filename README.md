@@ -11,18 +11,14 @@
 
 ## Project Overview
 
-This project demonstrates a **production-style DevOps workflow** by implementing **Infrastructure as Code (IaC) on the AWS cloud**. Terraform is used to provision modular cloud infrastructure, while Ansible automates server configuration, enabling a fully automated, repeatable, and end-to-end web server deployment from network provisioning to application-ready configuration.
+This project demonstrates a **production-style DevOps workflow** by implementing **Infrastructure as Code (IaC)** on the **AWS cloud**. Terraform is used to provision modular cloud infrastructure, while Ansible automates server configuration, enabling a fully automated, repeatable, and end-to-end web server deployment from network provisioning to application-ready configuration.
 
 ## Core Design Principles
 
 - **Terraform** manages the infrastructure lifecycle (create, modify, destroy)
-
 - **Ansible** manages server configuration (OS, packages, services)
-
 - **Strict separation of concerns** between infrastructure and configuration
-
 - **Idempotent automation** enabling safe re-runs
-
 - **Remote state management** with locking for reliability
 
 ## Features
@@ -96,9 +92,18 @@ iac-aws-terraform-ansible/
 │
 └── README.md                  
 ```
+## Author & Project Context
+
+**Saqlain Sheikh**  
+DevOps & Cloud Enthusiast  
+AWS • Terraform • Ansible • Docker • Linux  
+
+This project was developed as part of an internship at **Exposys Data Labs**, a software development company, to demonstrate practical implementation of **Infrastructure as Code (IaC)** for cloud environments.
+
+This project was independently designed, implemented, and documented end-to-end by me. The objective was to address common challenges of manual cloud infrastructure setup—such as inconsistency, errors, and poor repeatability—by automating infrastructure provisioning and server configuration using Terraform and Ansible, following production-oriented DevOps best practices.
 
 > **Note:** <small>
-> To run this project, see the **[Quick Start Guide](runbook.md)**.
+> To run this project, see the [Quick Start Guide](runbook.md).
 > </small>
 
 > **Note:** <small>
@@ -106,3 +111,5 @@ This project focuses on core infrastructure automation using Terraform and Ansib
 It intentionally excludes scaling components (ASG, ALB), CI/CD pipelines, Kubernetes, 
 and manual configuration to emphasize repeatable, idempotent provisioning and clean teardown.
 </small>
+
+<p align="center"><b>⭐ If you found this project useful, please star the repository!</b></p>
