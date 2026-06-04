@@ -62,7 +62,6 @@ This project demonstrates a **production-style DevOps workflow** by implementing
 - Nginx installation and service management
 - Role-based, reusable Ansible architecture
 
-
 ## Architecture Diagram
 
 ![Architecture Diagram](assets/architecture-diagram.png)
@@ -96,9 +95,7 @@ iac-aws-terraform-ansible/
 
 **Saqlain Sheikh**  
 DevOps & Cloud Enthusiast  
-AWS • Terraform • Ansible • Docker • Linux  
-
-
+AWS • Terraform • Ansible • Docker • Linux 
 
 This project was independently designed, implemented, and documented end-to-end by me. The objective was to address common challenges of manual cloud infrastructure setup—such as inconsistency, errors, and poor repeatability—by automating infrastructure provisioning and server configuration using Terraform and Ansible, following production-oriented DevOps best practices.
 
