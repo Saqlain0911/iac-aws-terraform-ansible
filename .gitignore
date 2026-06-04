@@ -10,6 +10,9 @@
 
 # SSH Keys
 *.pem
+id_ed25519_project
+id_ed25519_project.pub
+
 id_rsa_project
 id_rsa_project.pub
 

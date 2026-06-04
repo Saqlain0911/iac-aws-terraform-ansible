@@ -10,7 +10,7 @@ Ensure the following tools and configurations are in place:
 
 - AWS CLI installed and configured with valid credentials
 - Terraform and Ansible installed locally
-- SSH key pair named `id_rsa_project` present in the project root
+- SSH key pair named `id_ed25519_project` present in the project root
 - An AWS account with permissions to create networking and compute resources
 
 ### 2️⃣ Provision Infrastructure (Terraform)
